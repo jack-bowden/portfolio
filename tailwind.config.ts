@@ -26,6 +26,10 @@ const config = {
 		},
 		extend: {
 			colors: {
+				black: {
+					DEFAULT: 'rgb(0,0,0)',
+					100: 'rgb(30, 30, 30)',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -135,6 +139,11 @@ const config = {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				spotlight: 'spotlight 2s ease .75s 1 forwards',
+				first: 'moveVertical 30s ease infinite',
+				second: 'moveInCircle 20s reverse infinite',
+				third: 'moveInCircle 40s linear infinite',
+				fourth: 'moveHorizontal 40s ease infinite',
+				fifth: 'moveInCircle 20s ease infinite',
 			},
 		},
 	},
