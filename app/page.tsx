@@ -16,7 +16,7 @@ export default function Home() {
 			<div className='relative z-10 h-full w-full flex flex-col '>
 				<nav className='w-full items-center justify-between md:justify-center flex sticky top-5 z-40 '>
 					<Navbar />
-					<MobileNavbar />
+					{/* <MobileNavbar /> */}
 					<div className='md:hidden'>
 						<ThemeToggle />
 					</div>

@@ -1,28 +1,26 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, MotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 type Direction = 'TOP' | 'LEFT' | 'BOTTOM' | 'RIGHT';
+
+type HoverBorderGradientProps = MotionProps & {
+	containerClassName?: string;
+	className?: string;
+	duration?: number;
+	clockwise?: boolean;
+};
 
 export function HoverBorderGradient({
 	children,
 	containerClassName,
 	className,
-	as: Tag = 'button',
 	duration = 1,
 	clockwise = true,
 	...props
-}: React.PropsWithChildren<
-	{
-		as?: React.ElementType;
-		containerClassName?: string;
-		className?: string;
-		duration?: number;
-		clockwise?: boolean;
-	} & React.HTMLAttributes<HTMLElement>
->) {
+}: React.PropsWithChildren<HoverBorderGradientProps>) {
 	const [hovered, setHovered] = useState<boolean>(false);
 	const [direction, setDirection] = useState<Direction>('TOP');
 
@@ -56,7 +54,6 @@ export function HoverBorderGradient({
 		}
 	}, [hovered]);
 
-	// Animation variants for the border gradient
 	const borderVariants = {
 		hidden: { opacity: 0, scale: 0.9 },
 		visible: { opacity: 1, scale: 1, transition: { duration: 1, delay: 2 } },
@@ -67,7 +64,7 @@ export function HoverBorderGradient({
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 			className={cn(
-				'relative flex rounded-full border content-center bg-transparent transition duration-500 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-2/3',
+				'relative hidden md:flex rounded-full border content-center bg-transparent transition duration-500 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-2/3',
 				containerClassName
 			)}
 			{...props}

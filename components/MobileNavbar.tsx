@@ -6,22 +6,27 @@ const navItems = [
 	{
 		id: 0,
 		navTitle: 'home',
+		href: '#home',
 	},
 	{
 		id: 1,
 		navTitle: 'about',
+		href: '#about',
 	},
 	{
 		id: 2,
 		navTitle: 'projects',
+		href: '#projects',
 	},
 	{
 		id: 3,
-		navTitle: 'experience',
+		navTitle: 'contact',
+		href: '#contact',
 	},
 	{
 		id: 4,
 		navTitle: 'skills',
+		href: '#skills',
 	},
 ];
 
