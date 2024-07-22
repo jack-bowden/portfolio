@@ -13,7 +13,13 @@ const backendSkills = [
 	'Express',
 	'MongoDB',
 ];
-const stylingSkills = ['Tailwind CSS', 'Framer Motion', 'CSS', 'Material UI'];
+const stylingSkills = [
+	'Tailwind CSS',
+	'Framer Motion',
+	'CSS',
+	'Material UI',
+	'Figma',
+];
 const miscSkills = [
 	'Git',
 	'GitHub',
@@ -23,6 +29,7 @@ const miscSkills = [
 	'Firebase',
 	'Coolify',
 	'VPS',
+	'Linux',
 ];
 
 interface SkillsProps {
