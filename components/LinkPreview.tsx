@@ -2,7 +2,7 @@
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import Image from 'next/image';
 import { encode } from 'qss';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	AnimatePresence,
 	motion,
@@ -54,23 +54,23 @@ export const LinkPreview = ({
 		src = imageSrc;
 	}
 
-	const [isOpen, setOpen] = React.useState(false);
+	const [isOpen, setOpen] = useState(false);
+	const [isMounted, setIsMounted] = useState(false);
 
-	const [isMounted, setIsMounted] = React.useState(false);
-
-	React.useEffect(() => {
+	useEffect(() => {
 		setIsMounted(true);
 	}, []);
 
 	const springConfig = { stiffness: 100, damping: 15 };
 	const x = useMotionValue(0);
-
 	const translateX = useSpring(x, springConfig);
 
-	const handleMouseMove = (event: any) => {
-		const targetRect = event.target.getBoundingClientRect();
+	const handleMouseMove = (
+		event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+	) => {
+		const targetRect = event.currentTarget.getBoundingClientRect();
 		const eventOffsetX = event.clientX - targetRect.left;
-		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
+		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2;
 		x.set(offsetFromCenter);
 	};
 
@@ -97,16 +97,26 @@ export const LinkPreview = ({
 					setOpen(open);
 				}}
 			>
-				<HoverCardPrimitive.Trigger
-					onMouseMove={handleMouseMove}
-					className={cn('text-black dark:text-white', className)}
+				<Link
 					href={url}
+					passHref
+					legacyBehavior
 				>
-					{children}
-				</HoverCardPrimitive.Trigger>
+					<HoverCardPrimitive.Trigger
+						onMouseMove={handleMouseMove}
+						className={cn(
+							'text-black dark:text-white relative z-20',
+							className
+						)}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						{children}
+					</HoverCardPrimitive.Trigger>
+				</Link>
 
 				<HoverCardPrimitive.Content
-					className='[transform-origin:var(--radix-hover-card-content-transform-origin)]'
+					className='[transform-origin:var(--radix-hover-card-content-transform-origin)] z-30'
 					side='top'
 					align='center'
 					sideOffset={10}
@@ -133,6 +143,8 @@ export const LinkPreview = ({
 							>
 								<Link
 									href={url}
+									target='_blank'
+									rel='noopener noreferrer'
 									className='block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800'
 									style={{ fontSize: 0 }}
 								>

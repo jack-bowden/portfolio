@@ -10,7 +10,7 @@ const cardInfo = [
 	{
 		cardTitle: 'Job opportunities',
 		cardText:
-			'I&apos;m always open to job opportunities, I&apos;m currently in the market and available to discuss any openings. I would enjoy being part of a team that could help with my progression whilst benefitting from my experience and abilities in the process.',
+			"I'm always open to job opportunities, I'm currently in the market and available to discuss any openings. I would enjoy being part of a team that could help with my progression whilst benefitting from my experience and abilities in the process.",
 	},
 	{
 		cardTitle: 'Connect',
@@ -19,14 +19,14 @@ const cardInfo = [
 				If you would like to connect through my socials, please feel free to do
 				so by visiting my{' '}
 				<LinkPreview
-					url='https://tailwindcss.com'
+					url='https://www.linkedin.com/in/jackbowden22061992/'
 					className='font-bold underline'
 				>
 					LinkedIn
 				</LinkPreview>{' '}
 				or{' '}
 				<LinkPreview
-					url='https://framer.com/motion'
+					url='https://github.com/hihihi45'
 					className='font-bold underline'
 				>
 					GitHub
@@ -39,7 +39,7 @@ const cardInfo = [
 	{
 		cardTitle: 'Say hi',
 		cardText:
-			'If you would like to get in touch about anything at all,I&apos;m available to connect or discuss anything whether it be related to a project, work, opportunities or anything else, my inbox is always open and I will certainly be happy to respond.',
+			"If you would like to get in touch about anything at all, I'm available to connect or discuss anything whether it be related to a project, work, opportunities or anything else, my inbox is always open and I will certainly be happy to respond.",
 	},
 ];
 

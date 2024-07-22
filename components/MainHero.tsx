@@ -63,7 +63,10 @@ const MainHero = () => {
 						variant='ghost'
 						className='p-0 hover:bg-transparent'
 					>
-						<Link href='/'>
+						<Link
+							target='_blank'
+							href='https://www.linkedin.com/in/jackbowden22061992'
+						>
 							<FaLinkedin className='size-6 md:size-8 hover:text-foreground/60' />
 						</Link>
 					</Button>
@@ -93,13 +96,13 @@ const MainHero = () => {
 				variants={itemVariants}
 			>
 				<div className='relative group w-fit'>
-					<div className='absolute inset-0 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out shadow-lg'></div>
+					<div className='absolute hidden md:block inset-0 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out shadow-lg'></div>
 					<Image
 						src='/avatar.png'
 						alt='avatar'
 						width={200}
 						height={200}
-						className='opacity-85 mt-4 md:mt-0 rounded-full transition-transform duration-300 ease-in-out group-hover:scale-95 relative z-10'
+						className='opacity-85 mt-4 md:mt-0 rounded-full transition-transform duration-300 ease-in-out md:group-hover:scale-95 relative z-10'
 					/>
 				</div>
 			</motion.div>
