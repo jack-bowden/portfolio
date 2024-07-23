@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard
 
-## Getting Started
+A comprehensive dashboard application for managing customers, creating invoices, and visualizing key business metrics.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Customer Management: Add, edit, and delete customer profiles
+- Invoice Creation: Generate and manage invoices for customers
+- Key Metrics Visualization: Interactive charts and graphs for important business metrics
+- User Authentication: Secure login system for authorized access via Clerk
+- Responsive Design: Optimized for both desktop and mobile devices
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+2. Navigate to the project directory:
+3. Install dependencies:
+4. Set up environment variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Create a `.env` file in the root directory
+- Add necessary variables (e.g., your database URL, Clerk keys etc)
 
-## Learn More
+5. Run the development server:
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Access the application at `http://localhost:3000`
+2. Log in with your credentials
+3. Use the navigation menu to access different features:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Customers: Manage customer profiles
+- Invoices: Create and manage invoices
+- Dashboard: View key metrics and analytics
