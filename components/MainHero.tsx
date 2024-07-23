@@ -76,7 +76,7 @@ const MainHero = () => {
 					>
 						<Link
 							target='_blank'
-							href='https://github.com/hihihi45?tab=repositories'
+							href='https://github.com/jack-bowden'
 						>
 							<FaGithub className='size-6 md:size-8 hover:text-foreground/60' />
 						</Link>

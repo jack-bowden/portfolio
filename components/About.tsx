@@ -16,7 +16,7 @@ const cardInfo = [
 	},
 	{
 		cardTitle: 'Future',
-		cardText: `All I know right now is that I want to get better, no matter what it is, I want to improve, I want it to feel more natural, I want to learn more. There are so many ways of working, languages, frameworks, this entire industry has so many paths to go down and all I know is that when the opportunity arises, I will be ready and I will become an excellent member of whichever team I am part of.`,
+		cardText: `My goal for the future is to continue learning, I simply want to improve my skills, I want to write better code, I want to debug more efficiently, I enjoy this whole process and I simply want to be the best version of myself. There are so many ways of working, languages, frameworks, this entire industry has so many paths to go down and all I know is that when the opportunity arises, I will be ready and I will become an excellent member of whichever team I am part of.`,
 	},
 ];
 

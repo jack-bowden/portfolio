@@ -20,7 +20,7 @@ const projects = [
 			'/next.svg',
 			'/postgres.svg',
 		],
-		link: 'https://movies-kappa-ecru.vercel.app/',
+		link: 'https://movies.jackbowden.co.uk',
 	},
 	{
 		id: 2,
@@ -34,7 +34,7 @@ const projects = [
 			'/postgres.svg',
 			'/prisma.svg',
 		],
-		link: 'https://car-rentals-wheat.vercel.app/',
+		link: 'https://car-rental.jackbowden.co.uk',
 	},
 	{
 		id: 3,
@@ -48,7 +48,7 @@ const projects = [
 			'/postgres.svg',
 			'/next.svg',
 		],
-		link: 'https://dashboard-ten-eta-75.vercel.app/',
+		link: 'https://dashboard.jackbowden.co.uk',
 	},
 ];
 
@@ -139,7 +139,7 @@ const Projects = () => {
 										{item.iconLists.map((icon, index) => (
 											<div
 												key={index}
-												className='border border-white/[.2] rounded-full flex items-center justify-center w-[28px] h-[28px]'
+												className='rounded-full flex items-center justify-center w-[28px] h-[28px]'
 											>
 												<img
 													className='size-full'
@@ -153,8 +153,12 @@ const Projects = () => {
 									<div className='flex justify-center items-center'>
 										<p className='flex'>Check Live Site</p>
 										<FaLocationArrow
-											className='ms-3'
+											className='ms-3 dark:hidden block'
 											color='#000'
+										/>
+										<FaLocationArrow
+											className='ms-3 dark:block hidden'
+											color='#fff'
 										/>
 									</div>
 								</div>

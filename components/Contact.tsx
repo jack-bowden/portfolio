@@ -26,7 +26,7 @@ const cardInfo = [
 				</LinkPreview>{' '}
 				or{' '}
 				<LinkPreview
-					url='https://github.com/hihihi45'
+					url='https://github.com/jack-bowden'
 					className='font-bold underline'
 				>
 					GitHub
