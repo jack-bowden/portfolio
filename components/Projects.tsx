@@ -14,11 +14,11 @@ const projects = [
 		des: 'A movie database app with the option to log in and save your favorites.',
 		img: '/movies.png',
 		iconLists: [
-			'/prisma.svg',
-			'/tailwind.svg',
-			'/typescript.svg',
-			'/next.svg',
-			'/postgres.svg',
+			{ light: '/prisma.svg', dark: '/dark-prisma.svg' },
+			{ light: '/tailwind.svg', dark: '/tailwind.svg' },
+			{ light: '/typescript.svg', dark: '/typescript.svg' },
+			{ light: '/next.svg', dark: '/dark-next.svg' },
+			{ light: '/postgres.svg', dark: '/postgres.svg' },
 		],
 		link: 'https://movies.jackbowden.co.uk',
 	},
@@ -28,11 +28,11 @@ const projects = [
 		des: 'Car rental with the ability to browse vehicles and make bookings.',
 		img: '/car-rentals.png',
 		iconLists: [
-			'/next.svg',
-			'/tailwind.svg',
-			'/typescript.svg',
-			'/postgres.svg',
-			'/prisma.svg',
+			{ light: '/next.svg', dark: '/dark-next.svg' },
+			{ light: '/tailwind.svg', dark: '/tailwind.svg' },
+			{ light: '/typescript.svg', dark: '/typescript.svg' },
+			{ light: '/postgres.svg', dark: '/postgres.svg' },
+			{ light: '/prisma.svg', dark: '/dark-prisma.svg' },
 		],
 		link: 'https://car-rental.jackbowden.co.uk',
 	},
@@ -42,11 +42,11 @@ const projects = [
 		des: 'Allowing the creation of users and invoices, with highlighting of key metrics.',
 		img: '/dashboard.png',
 		iconLists: [
-			'/prisma.svg',
-			'/tailwind.svg',
-			'/typescript.svg',
-			'/postgres.svg',
-			'/next.svg',
+			{ light: '/prisma.svg', dark: '/dark-prisma.svg' },
+			{ light: '/tailwind.svg', dark: '/tailwind.svg' },
+			{ light: '/postgres.svg', dark: '/postgres.svg' },
+			{ light: '/typescript.svg', dark: '/typescript.svg' },
+			{ light: '/next.svg', dark: '/dark-next.svg' },
 		],
 		link: 'https://dashboard.jackbowden.co.uk',
 	},
@@ -142,8 +142,13 @@ const Projects = () => {
 												className='rounded-full flex items-center justify-center w-[28px] h-[28px]'
 											>
 												<img
-													className='size-full'
-													src={icon}
+													className='size-full dark:hidden'
+													src={icon.light}
+													alt={`icon${index + 1}`}
+												/>
+												<img
+													className='size-full hidden dark:block'
+													src={icon.dark}
 													alt={`icon${index + 1}`}
 												/>
 											</div>
