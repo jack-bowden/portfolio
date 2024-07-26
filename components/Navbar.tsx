@@ -22,7 +22,6 @@ const Navbar = () => {
 		visible: { pathLength: 1, transition: { duration: 1 } },
 	};
 
-	// Animation variants for the navbar
 	const navbarVariants = {
 		hidden: { opacity: 0, y: -20 },
 		visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 } },
