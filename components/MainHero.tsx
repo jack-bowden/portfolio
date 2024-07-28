@@ -100,7 +100,7 @@ const MainHero = () => {
 						alt='avatar'
 						width={200}
 						height={200}
-						className='mt-10 md:mt-0 rounded-full transition-transform duration-300 ease-in-out md:group-hover:scale-95 relative z-10'
+						className='mt-12 md:mt-0 rounded-full transition-transform duration-300 ease-in-out md:group-hover:scale-95 relative z-10'
 					/>
 				</div>
 			</motion.div>
