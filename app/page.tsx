@@ -1,6 +1,5 @@
 'use client';
 
-import MobileNavbar from '@/components/MobileNavbar';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
 import { ThemeToggle } from '@/components/ThemeToggle';
