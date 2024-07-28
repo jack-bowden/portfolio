@@ -50,10 +50,8 @@ const MainHero = () => {
 					I'm a UK based software engineer
 				</motion.h1>
 				<motion.p variants={itemVariants}>
-					I have a passion for attempting to get my thoughts out in a way that
-					not only presents them with a nice, clean interface, but also
-					something that functions perfectly sound. I'm always looking to evolve
-					and learn in order to be the best I can be.
+					I have a passion for learning, I strive to constantly improve and be
+					the best engineer that I can possibly be.
 				</motion.p>
 				<motion.div
 					className='flex space-x-6'
