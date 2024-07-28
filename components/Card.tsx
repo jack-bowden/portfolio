@@ -29,7 +29,7 @@ const Card = ({ cardTitle, cardText }: CardProps) => {
 
 	return (
 		<div
-			className='relative text-center w-96 h-80 border border-black/30 dark:border-white/40 p-4 overflow-auto'
+			className='relative text-center w-96 max-w-[90%] h-80 border border-black/30 dark:border-white/40 p-4 overflow-auto'
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
 		>
