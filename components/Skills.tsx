@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-const frontendSkills = ['HTML', 'Javascript', 'Typescript', 'React', 'Next'];
+const frontendSkills = ['HTML', 'Javascript', 'Typescript', 'React', 'Next JS'];
 const backendSkills = [
 	'Prisma',
 	'PostgreSQL',
@@ -23,13 +23,13 @@ const stylingSkills = [
 const miscSkills = [
 	'Git',
 	'GitHub',
-	'Vercel',
 	'Docker',
 	'Clerk',
-	'Firebase',
-	'Coolify',
 	'VPS',
 	'Linux',
+	'AWS',
+	'Azure',
+	'Kubernetes',
 ];
 
 interface SkillsProps {
@@ -81,7 +81,7 @@ const Skills = () => {
 			<h1 className='text-2xl sm:text-3xl lg:text-4xl text-center mb-10'>
 				Skills
 			</h1>
-			<div className='max-w-6xl mx-auto px-4'>
+			<div className='max-w-6xl mx-auto px-2'>
 				<SkillSection
 					title='Frontend'
 					skills={frontendSkills}
