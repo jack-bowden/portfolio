@@ -27,7 +27,7 @@ const Footer = () => {
 
 	const cardVariants = {
 		hidden: {
-			y: 50, // Adjust this value to control the initial position
+			y: 50,
 			opacity: 0,
 		},
 		visible: {
