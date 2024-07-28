@@ -43,9 +43,9 @@ export default function RootLayout({
 						defaultTheme='system'
 					>
 						<div className='min-h-screen h-full relative pb-6 min-w-full'>
-							<div className='absolute inset-0 min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.08] bg-grid-black/[0.03]' />
+							<div className='absolute inset-0 min-h-screen min-w-full w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.08] bg-grid-black/[0.03]' />
 
-							<main className='min-h-screen max-w-6xl px-12 md:px-20 py-4 mx-auto antialiased'>
+							<main className='min-h-screen max-w-6xl min-w-full px-12 md:px-20 py-4 mx-auto antialiased'>
 								<div className='w-[500px] h-[360px] bg-indigo-500/60 dark:bg-white/45 rounded-full absolute z-10 top-[5%] left-[5%] translate-x-[-50%] translate-y-[-50%] blur-3xl opacity-50'></div>
 								<div className='w-[300px] h-[240px] bg-indigo-500/60 dark:bg-white/45 rounded-full absolute z-10 top-[27.5%] -right-[20%] translate-x-[-50%] translate-y-[-50%] blur-3xl opacity-50'></div>
 								<div className='w-[400px] h-[340px] bg-indigo-500/60 dark:bg-white/45 rounded-full absolute z-10 bottom-[40%] left-[5%] translate-x-[-50%] translate-y-[-50%] blur-3xl opacity-50'></div>
