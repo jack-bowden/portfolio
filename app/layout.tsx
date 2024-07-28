@@ -42,7 +42,7 @@ export default function RootLayout({
 						attribute='class'
 						defaultTheme='system'
 					>
-						<div className='min-h-screen h-full relative pb-6'>
+						<div className='min-h-screen h-full relative pb-6 min-w-full'>
 							<div className='absolute inset-0 min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.08] bg-grid-black/[0.03]' />
 
 							<main className='min-h-screen max-w-6xl px-12 md:px-20 py-4 mx-auto antialiased'>

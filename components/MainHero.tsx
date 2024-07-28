@@ -96,9 +96,9 @@ const MainHero = () => {
 				variants={itemVariants}
 			>
 				<div className='relative group w-fit'>
-					<div className='absolute hidden md:block inset-0 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out shadow-lg'></div>
+					<div className='absolute hidden md:block  inset-0 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out shadow-lg'></div>
 					<Image
-						src='/avatar.png'
+						src='/linkedin-picture.jpg'
 						alt='avatar'
 						width={200}
 						height={200}
