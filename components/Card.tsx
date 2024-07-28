@@ -35,7 +35,7 @@ const Card = ({ cardTitle, cardText }: CardProps) => {
 		>
 			{mousePos && (
 				<motion.div
-					className='absolute blur-xl rounded-full bg-indigo-500/60 dark:bg-white/45 pointer-events-none'
+					className='hidden md:block absolute blur-xl rounded-full bg-indigo-500/60 dark:bg-white/45 pointer-events-none'
 					style={{
 						top: mousePos.y - 15,
 						left: mousePos.x - 15,
