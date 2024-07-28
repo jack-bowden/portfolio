@@ -90,7 +90,7 @@ const Projects = () => {
 
 	return (
 		<div
-			className='pt-32 lg:pt-[8.75rem]'
+			className='pt-16 lg:pt-[8.75rem]'
 			id='projects'
 			ref={ref}
 		>
@@ -104,7 +104,7 @@ const Projects = () => {
 				{projects.map(item => (
 					<motion.div
 						key={item.id}
-						className='lg:h-[22rem] mt-2 flex items-center justify-center sm:w-96 w-[80vw]'
+						className=' lg:h-[22rem] md:mt-2 -mt-10 flex items-center justify-center sm:w-96 w-[80vw]'
 						variants={cardVariants}
 					>
 						<ProjectCard title={item.title}>
@@ -112,7 +112,7 @@ const Projects = () => {
 								target='_blank'
 								href={item.link}
 							>
-								<div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[25vh] lg:h-[30vh] mb-4'>
+								<div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[16vh] lg:h-[30vh] mb-4'>
 									<img
 										src={item.img}
 										alt='cover'
@@ -139,7 +139,7 @@ const Projects = () => {
 										{item.iconLists.map((icon, index) => (
 											<div
 												key={index}
-												className='rounded-full flex items-center justify-center w-[28px] h-[28px]'
+												className='rounded-full flex items-center justify-center w-[18px] h-[18px] md:w-[28px] md:h-[28px]'
 											>
 												<img
 													className='size-full dark:hidden'
@@ -156,13 +156,13 @@ const Projects = () => {
 									</div>
 
 									<div className='flex justify-center items-center'>
-										<p className='flex'>Check Live Site</p>
+										<p className='flex truncate'>Check Live Site</p>
 										<FaLocationArrow
 											className='ms-3 dark:hidden block'
 											color='#000'
 										/>
 										<FaLocationArrow
-											className='ms-3 dark:block hidden'
+											className='ms-1.5 dark:block hidden'
 											color='#fff'
 										/>
 									</div>
