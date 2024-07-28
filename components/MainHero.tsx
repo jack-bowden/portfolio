@@ -40,16 +40,14 @@ const MainHero = () => {
 				className='w-full md:w-1/2 space-y-6 flex flex-col'
 				variants={itemVariants}
 			>
-				<motion.p variants={itemVariants}>
-					Welcome to my portfolio - Test line
-				</motion.p>
+				<motion.p variants={itemVariants}>Welcome to my portfolio</motion.p>
 				<motion.h1
 					className='text-2xl sm:text-3xl lg:text-4xl'
 					variants={itemVariants}
 				>
 					My name is Jack Bowden,
 					<br />
-					I'm a UK based web developer
+					I'm a UK based software engineer
 				</motion.h1>
 				<motion.p variants={itemVariants}>
 					I have a passion for attempting to get my thoughts out in a way that
