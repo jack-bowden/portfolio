@@ -96,6 +96,7 @@ const Contact = () => {
 					<motion.div
 						key={index}
 						variants={cardVariants}
+						className='flex justify-center items-center'
 					>
 						<Card
 							cardTitle={card.cardTitle}
