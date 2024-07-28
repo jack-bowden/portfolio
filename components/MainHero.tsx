@@ -51,7 +51,7 @@ const MainHero = () => {
 				</motion.h1>
 				<motion.p variants={itemVariants}>
 					I have a passion for learning, I strive to constantly improve and be
-					the best engineer that I can possibly be.
+					the best engineer that I can possibly be
 				</motion.p>
 				<motion.div
 					className='flex space-x-6'
