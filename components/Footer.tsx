@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import SocialIcons from './SocialIcons';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { BiArrowToTop } from 'react-icons/bi';
