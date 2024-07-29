@@ -8,6 +8,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import { MobileThemeToggle } from '@/components/MobileThemeToggle';
 
 export default function Home() {
 	return (
@@ -17,7 +18,7 @@ export default function Home() {
 					<Navbar />
 
 					<div className='md:hidden'>
-						<ThemeToggle />
+						<MobileThemeToggle />
 					</div>
 				</nav>
 				<MainHero />
