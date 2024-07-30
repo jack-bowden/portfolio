@@ -12,8 +12,8 @@ import { MobileThemeToggle } from '@/components/MobileThemeToggle';
 
 export default function Home() {
 	return (
-		<main className='relative min-h-screen'>
-			<div className='relative z-10 h-full w-full flex flex-col '>
+		<main className='relative'>
+			<div className='relative z-10 w-full flex flex-col '>
 				<nav className='w-full items-center justify-between md:justify-center flex sticky top-5 z-40 '>
 					<Navbar />
 

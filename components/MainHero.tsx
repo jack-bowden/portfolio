@@ -31,7 +31,7 @@ const MainHero = () => {
 
 	return (
 		<motion.div
-			className='pt-10 max-h-screen md:pt-32 md:pb-24 flex flex-col md:flex-row items-center '
+			className='pt-10 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center '
 			variants={containerVariants}
 			initial='hidden'
 			animate='visible'
@@ -45,7 +45,7 @@ const MainHero = () => {
 					className='text-2xl sm:text-3xl lg:text-4xl'
 					variants={itemVariants}
 				>
-					My name is Jack Bowden,
+					<span className='truncate'>My name is Jack Bowden,</span>
 					<br />
 					I'm a UK based software engineer
 				</motion.h1>
