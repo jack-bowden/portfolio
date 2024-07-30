@@ -31,7 +31,7 @@ const MainHero = () => {
 
 	return (
 		<motion.div
-			className='pt-10 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center'
+			className='pt-10 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center '
 			variants={containerVariants}
 			initial='hidden'
 			animate='visible'
