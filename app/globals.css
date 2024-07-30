@@ -28,6 +28,10 @@ h3 {
 	padding-bottom: 4px;
 }
 
+h1 {
+	font-size: 1.5rem;
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
