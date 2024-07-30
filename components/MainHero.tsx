@@ -31,7 +31,7 @@ const MainHero = () => {
 
 	return (
 		<motion.div
-			className='pt-10 md:pt-24 md:pb-24 flex flex-col md:flex-row items-center'
+			className='pt-20 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center'
 			variants={containerVariants}
 			initial='hidden'
 			animate='visible'
@@ -93,14 +93,13 @@ const MainHero = () => {
 				className='w-1/2 flex items-center justify-end z-10'
 				variants={itemVariants}
 			>
-				<div className='relative group w-fit'>
-					<div className='absolute hidden md:block  inset-0 bg-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out shadow-lg'></div>
+				<div className='relative group w-full flex justify-center md:justify-end'>
 					<Image
 						src='/linkedin-picture.jpg'
 						alt='avatar'
 						width={200}
 						height={200}
-						className='mt-12 md:mt-0 rounded-full transition-transform duration-300 ease-in-out md:group-hover:scale-95 relative z-10'
+						className='mt-20 md:mt-0 rounded-full w-36 h-36 sm:w-40 sm:h-40 md:w-50 md:h-50 lg:w-52 lg:h-52 xl:w-56 xl:h-56'
 					/>
 				</div>
 			</motion.div>

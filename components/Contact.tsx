@@ -87,7 +87,7 @@ const Contact = () => {
 		>
 			<CardHeading heading='Get in touch' />
 			<motion.div
-				className='flex flex-wrap justify-center gap-8'
+				className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 place-items-stretch'
 				variants={containerVariants}
 				initial='hidden'
 				animate={controls}
@@ -96,7 +96,11 @@ const Contact = () => {
 					<motion.div
 						key={index}
 						variants={cardVariants}
-						className='flex justify-center items-center'
+						className={
+							card.cardTitle === 'Say hi'
+								? 'col-span-1 sm:col-span-2 xl:col-span-1 sm:px-20 lg:px-[16.5rem] xl:px-0'
+								: 'flex'
+						}
 					>
 						<Card
 							cardTitle={card.cardTitle}

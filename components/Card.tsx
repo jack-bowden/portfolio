@@ -29,7 +29,7 @@ const Card = ({ cardTitle, cardText }: CardProps) => {
 
 	return (
 		<div
-			className='relative text-center w-96 max-w-[88%] h-80 border border-black/30 dark:border-white/40 p-4 overflow-auto'
+			className='relative flex flex-col text-center border border-black/30 dark:border-white/40 p-4 overflow-auto bg-transparent shadow-lg rounded-lg'
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
 		>
@@ -48,8 +48,8 @@ const Card = ({ cardTitle, cardText }: CardProps) => {
 					transition={{ type: 'spring', stiffness: 300, damping: 30 }}
 				/>
 			)}
-			<h3 className='text-xl font-bold my-4 relative z-10'>{cardTitle}</h3>
-			<div className='text-center relative z-10'>{cardText}</div>
+			<h3 className='text-xl font-bold mb-4'>{cardTitle}</h3>
+			<div className='text-center'>{cardText}</div>
 		</div>
 	);
 };

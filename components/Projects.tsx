@@ -90,11 +90,14 @@ const Projects = () => {
 
 	return (
 		<div
-			className='pt-16 lg:pt-[8.75rem]'
+			className='pt-[8.75rem]'
 			id='projects'
 			ref={ref}
 		>
-			<CardHeading heading='Recent projects' />
+			<CardHeading
+				heading='Recent projects'
+				className='mb-14 sm:mb-20 md:mb-14'
+			/>
 			<motion.div
 				className='flex flex-wrap items-center justify-center gap-16'
 				variants={containerVariants}
@@ -104,7 +107,7 @@ const Projects = () => {
 				{projects.map(item => (
 					<motion.div
 						key={item.id}
-						className=' lg:h-[22rem] md:mt-2 -mt-10 flex items-center justify-center sm:w-96 w-[80vw]'
+						className=' lg:h-[22rem] lg:mt-2 -mt-12 sm:-mt-20 md:-mt-12 flex items-center justify-center sm:w-96 w-[80vw]'
 						variants={cardVariants}
 					>
 						<ProjectCard title={item.title}>
@@ -124,13 +127,7 @@ const Projects = () => {
 									{item.title}
 								</h1>
 
-								<p
-									className='lg:text-md lg:font-normal font-light text-sm line-clamp-2'
-									style={{
-										color: '#BEC1DD',
-										margin: '1vh 0',
-									}}
-								>
+								<p className='lg:text-md pt-1 pl-0.5 lg:font-normal font text-sm font-semibold line-clamp-2'>
 									{item.des}
 								</p>
 

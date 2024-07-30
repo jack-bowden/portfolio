@@ -1,9 +1,9 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import CardHeading from './CardHeading';
 import Card from './Card';
-import { motion, useAnimation, useInView } from 'framer-motion';
 
 const cardInfo = [
 	{
@@ -59,12 +59,12 @@ const About = () => {
 	return (
 		<main
 			id='about'
-			className='w-full pt-24'
+			className='w-full pt-36'
 			ref={ref}
 		>
 			<CardHeading heading='About me timeline' />
 			<motion.div
-				className='flex flex-wrap justify-center gap-8'
+				className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12 place-items-stretch'
 				variants={containerVariants}
 				initial='hidden'
 				animate={controls}
@@ -73,7 +73,11 @@ const About = () => {
 					<motion.div
 						key={index}
 						variants={cardVariants}
-						className='flex justify-center items-center'
+						className={
+							card.cardTitle === 'Future'
+								? 'col-span-1 sm:col-span-2 xl:col-span-1 sm:px-20 lg:px-[16.5rem] xl:px-0'
+								: 'flex'
+						}
 					>
 						<Card
 							cardTitle={card.cardTitle}
