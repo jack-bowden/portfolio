@@ -115,7 +115,7 @@ const Projects = () => {
 								target='_blank'
 								href={item.link}
 							>
-								<div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[16vh] lg:h-[30vh] mb-4'>
+								<div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[16vh] lg:h-[26vh] mb-4'>
 									<img
 										src={item.img}
 										alt='cover'
