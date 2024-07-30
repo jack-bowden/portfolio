@@ -31,7 +31,7 @@ const MainHero = () => {
 
 	return (
 		<motion.div
-			className='pt-20 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center'
+			className='pt-10 md:pt-32 md:pb-24 flex flex-col md:flex-row items-center'
 			variants={containerVariants}
 			initial='hidden'
 			animate='visible'
@@ -97,9 +97,16 @@ const MainHero = () => {
 					<Image
 						src='/linkedin-picture.jpg'
 						alt='avatar'
+						width={140}
+						height={140}
+						className='mt-20 md:mt-0 rounded-xl shadow-lg block md:hidden'
+					/>
+					<Image
+						src='/linkedin-picture.jpg'
+						alt='avatar'
 						width={200}
 						height={200}
-						className='mt-20 md:mt-0 rounded-full w-36 h-36 sm:w-40 sm:h-40 md:w-50 md:h-50 lg:w-52 lg:h-52 xl:w-56 xl:h-56'
+						className='mt-20 md:mt-0 rounded-xl shadow-lg hidden md:block'
 					/>
 				</div>
 			</motion.div>
