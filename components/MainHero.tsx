@@ -80,14 +80,6 @@ const MainHero = () => {
 						</Link>
 					</Button>
 				</motion.div>
-				<motion.div variants={itemVariants}>
-					<Button
-						className='w-36 border-indigo-500 hover:text-indigo-500 hover:font-bold antialiased'
-						variant='outline'
-					>
-						<Link href='#projects'>View my projects</Link>
-					</Button>
-				</motion.div>
 			</motion.div>
 			<motion.div
 				className='w-1/2 flex items-center justify-end z-10'
