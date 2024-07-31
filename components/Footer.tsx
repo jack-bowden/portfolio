@@ -44,7 +44,7 @@ const Footer = () => {
 	return (
 		<main className='w-full'>
 			<motion.div
-				className='w-full justify-center items-center  flex pt-20'
+				className='w-full justify-center items-center flex pt-20'
 				variants={containerVariants}
 				initial='hidden'
 				animate={controls}
@@ -56,7 +56,7 @@ const Footer = () => {
 				>
 					<p className='text-xl'>2024 - present. Jack Bowden ©</p>
 					<SocialIcons />
-					<div className='w-full pt-4 flex justify-center'>
+					<div className='w-full flex justify-center'>
 						<BiArrowToTop
 							className='cursor-pointer hover:text-foreground/60'
 							size={32}

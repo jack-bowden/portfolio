@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import SocialIcons from './SocialIcons';
 
 const MainHero = () => {
 	const containerVariants = {
@@ -57,28 +55,7 @@ const MainHero = () => {
 					className='flex space-x-6'
 					variants={itemVariants}
 				>
-					<Button
-						variant='ghost'
-						className='p-0 hover:bg-transparent'
-					>
-						<Link
-							target='_blank'
-							href='https://www.linkedin.com/in/jackbowden22061992'
-						>
-							<FaLinkedin className='size-6 md:size-8 hover:text-foreground/60' />
-						</Link>
-					</Button>
-					<Button
-						variant='ghost'
-						className='p-0 hover:bg-transparent'
-					>
-						<Link
-							target='_blank'
-							href='https://github.com/jack-bowden'
-						>
-							<FaGithub className='size-6 md:size-8 hover:text-foreground/60' />
-						</Link>
-					</Button>
+					<SocialIcons />
 				</motion.div>
 			</motion.div>
 			<motion.div

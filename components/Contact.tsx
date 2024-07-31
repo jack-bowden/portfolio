@@ -38,8 +38,20 @@ const cardInfo = [
 	},
 	{
 		cardTitle: 'Say hi',
-		cardText:
-			"If you would like to get in touch about anything at all, I'm available to connect or discuss anything whether it be related to a project, work, opportunities or anything else, my inbox is always open and I will certainly be happy to respond.",
+		cardText: (
+			<>
+				If you would like to{' '}
+				<a
+					className='font-bold underline'
+					href='mailto:jackbowden1992@gmail.com'
+				>
+					get in touch
+				</a>{' '}
+				about anything at all, I'm available to connect or discuss anything
+				whether it be related to a project, work, opportunities or anything
+				else, my inbox is always open and I will certainly be happy to respond.
+			</>
+		),
 	},
 ];
 

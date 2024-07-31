@@ -1,3 +1,4 @@
+import { Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -24,6 +25,14 @@ const SocialIcons = () => {
 					>
 						<FaGithub className='size-6 md:size-8 hover:text-foreground/60' />
 					</Link>
+				</Button>
+				<Button
+					variant='ghost'
+					className='p-0 hover:bg-transparent'
+				>
+					<a href='mailto:jackbowden1992@gmail.com'>
+						<Mail className='size-6 md:size-8 hover:text-foreground/60' />
+					</a>
 				</Button>
 			</div>
 		</main>
