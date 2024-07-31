@@ -90,7 +90,7 @@ const Projects = () => {
 
 	return (
 		<div
-			className='pt-[8.75rem]'
+			className='pt-[9.25rem]'
 			id='projects'
 			ref={ref}
 		>
