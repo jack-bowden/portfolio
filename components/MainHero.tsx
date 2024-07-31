@@ -97,8 +97,8 @@ const MainHero = () => {
 					<Image
 						src='/linkedin-picture.jpg'
 						alt='avatar'
-						width={140}
-						height={140}
+						width={120}
+						height={120}
 						className='mt-20 md:mt-0 rounded-xl shadow-lg block md:hidden'
 					/>
 					<Image
