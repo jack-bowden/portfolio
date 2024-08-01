@@ -44,7 +44,7 @@ const Footer = () => {
 	return (
 		<main className='w-full'>
 			<motion.div
-				className='w-full justify-center items-center flex pt-20'
+				className='w-full justify-center items-center flex pt-32'
 				variants={containerVariants}
 				initial='hidden'
 				animate={controls}
