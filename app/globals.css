@@ -10,17 +10,19 @@
 	box-sizing: border-box;
 }
 
-* {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+@media screen and (max-width: 601px) {
+	* {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
-* {
-	scrollbar-width: none;
-	-ms-overflow-style: none;
-}
-*::-webkit-scrollbar {
-	display: none;
+	* {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+	*::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 h3 {
