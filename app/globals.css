@@ -4,6 +4,10 @@
 
 @import 'normalize.css';
 
+body {
+	cursor: default;
+}
+
 *,
 *::before,
 *::after {

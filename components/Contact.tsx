@@ -18,19 +18,19 @@ const cardInfo = [
 			<>
 				If you would like to connect through my socials, please feel free to do
 				so by visiting my{' '}
-				<LinkPreview
-					url='https://www.linkedin.com/in/jackbowden22061992/'
-					className='font-bold underline'
+				<a
+					className='font-bold underline hover:text-indigo-500 transition-all'
+					href='https://www.linkedin.com/in/jackbowden22061992/'
 				>
 					LinkedIn
-				</LinkPreview>{' '}
+				</a>{' '}
 				or{' '}
-				<LinkPreview
-					url='https://github.com/jack-bowden'
-					className='font-bold underline'
+				<a
+					className='font-bold underline hover:text-indigo-500 transition-all'
+					href='https://github.com/jack-bowden'
 				>
 					GitHub
-				</LinkPreview>{' '}
+				</a>{' '}
 				where I will be happy to respond to any messages, feedback or whatever
 				it may be.
 			</>
@@ -42,7 +42,7 @@ const cardInfo = [
 			<>
 				If you would like to{' '}
 				<a
-					className='font-bold underline'
+					className='font-bold underline hover:text-indigo-500 transition-all'
 					href='mailto:jackbowden1992@gmail.com'
 				>
 					get in touch
