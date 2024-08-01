@@ -11,7 +11,10 @@ const SocialIcons = () => {
 					variant='ghost'
 					className='p-0 hover:bg-transparent'
 				>
-					<Link href='https://linkedin.com/in/jackbowden22061992'>
+					<Link
+						target='_blank'
+						href='https://linkedin.com/in/jackbowden22061992'
+					>
 						<FaLinkedin className='size-6 md:size-8 hover:text-foreground/60' />
 					</Link>
 				</Button>
