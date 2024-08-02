@@ -8,11 +8,11 @@ import Card from './Card';
 const cardInfo = [
 	{
 		cardTitle: 'Past',
-		cardText: `I started having an interest in IT at a young age, after finishing school I proceeded to do an apprenticeship and enjoy learning as a hobby. After some time in a different industry I decided to fully focus on IT and started with a 1st line engineer role which helped form my likes/dislikes and helped me discover my passion for programming.`,
+		cardText: `I started having an interest in IT at a young age, after finishing school I proceeded to do an apprenticeship and enjoyed learning as a hobby. After some time in a different industry I decided to fully focus on IT and started with a 1st line engineer role which helped form my likes/dislikes and helped me discover my passion for programming.`,
 	},
 	{
 		cardTitle: 'Present',
-		cardText: `Right now I'm fully focused on simply learning as much as possible, I program every single day, I love it, I love learning and the entire process is thoroughly enjoyable to me. My goal is to be part of a company to help me progress and learn as much as possible where I can become a valuable team member.`,
+		cardText: `Right now I'm fully focused on simply learning as much as possible, I program every single day, I love it, I love learning and the entire process is thoroughly enjoyable to me. My goal is to be part of a company where I can become a valuable member of them and who can support my ambition to continue developing my skills.`,
 	},
 	{
 		cardTitle: 'Future',
