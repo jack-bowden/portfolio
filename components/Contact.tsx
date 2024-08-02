@@ -21,6 +21,7 @@ const cardInfo = [
 				<a
 					className='font-bold underline hover:text-indigo-500 transition-all'
 					href='https://www.linkedin.com/in/jackbowden22061992/'
+					target='_blank'
 				>
 					LinkedIn
 				</a>{' '}
@@ -28,6 +29,7 @@ const cardInfo = [
 				<a
 					className='font-bold underline hover:text-indigo-500 transition-all'
 					href='https://github.com/jack-bowden'
+					target='_blank'
 				>
 					GitHub
 				</a>{' '}
